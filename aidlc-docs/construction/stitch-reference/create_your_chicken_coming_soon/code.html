@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crea Tu Pollo - Coming Soon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1a1c1c",
+                    "surface-bright": "#f9f9f9",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#474646",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-surface-variant": "#5b403a",
+                    "tertiary-fixed": "#ffdad3",
+                    "tertiary-container": "#ff5733",
+                    "on-secondary-fixed": "#151c27",
+                    "surface-container-low": "#f3f3f4",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-primary-container": "#2a2a2a",
+                    "outline": "#8f7069",
+                    "surface-variant": "#e2e2e2",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#dce2f3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "background": "#f9f9f9",
+                    "primary-fixed": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#1c1b1b",
+                    "tertiary": "#b72301",
+                    "surface-container-high": "#e8e8e8",
+                    "on-tertiary-container": "#580c00",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#8c1800",
+                    "on-tertiary-fixed": "#3d0600",
+                    "on-secondary-fixed-variant": "#404754",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#c0c7d6",
+                    "inverse-surface": "#2f3131",
+                    "secondary": "#585f6c",
+                    "secondary-container": "#dce2f3",
+                    "outline-variant": "#e4beb6",
+                    "tertiary-fixed-dim": "#ffb4a4",
+                    "primary-container": "#929190",
+                    "primary": "#5f5e5e",
+                    "surface-dim": "#dadada",
+                    "on-secondary-container": "#5e6572",
+                    "surface": "#f9f9f9",
+                    "inverse-primary": "#c8c6c5",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1a1c1c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-extrabold text-[#111111] dark:text-white tracking-tighter">POLLOS</div>
+<!-- Navigation Links - PC Only -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#111111] transition-colors duration-300" href="#">Inicio</a>
+<a class="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#111111] transition-colors duration-300" href="#">Colección</a>
+<a class="text-[#111111] dark:text-white border-b-2 border-[#FF5733] pb-1" href="#">Crea tu Pollo</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-8 py-2.5 rounded-full bg-[#111111] text-white font-bold scale-95 active:scale-90 transition-transform hover:bg-zinc-800">Mint</button>
+</div>
+</div>
+</nav>
+<main class="min-h-[819px] flex flex-col items-center justify-center px-6 relative overflow-hidden">
+<!-- Decorative Elements -->
+<div class="absolute top-20 left-10 opacity-10 pointer-events-none transform -rotate-12">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 0;">egg</span>
+</div>
+<div class="absolute bottom-40 right-10 opacity-10 pointer-events-none transform rotate-12">
+<span class="material-symbols-outlined text-[160px]" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<div class="absolute top-1/2 left-1/4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[80px]">auto_awesome</span>
+</div>
+<div class="max-w-4xl w-full text-center z-10">
+<!-- Header Section -->
+<div class="mb-12">
+<span class="text-tertiary-container font-bold tracking-[0.2em] uppercase text-[0.75rem] mb-4 block">Coming Soon / Próximamente</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter mb-6">Crea Tu Pollo</h1>
+<p class="text-secondary text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
+                    Soon you'll be able to mix and match chicken traits to create your own character. A unique digital laboratory for the POLLOS ecosystem.
+                </p>
+</div>
+<!-- Preview Card -->
+<div class="relative group mx-auto mb-16 max-w-md">
+<div class="absolute -inset-4 bg-surface-container-low rounded-xl transform transition-transform duration-500 group-hover:scale-105"></div>
+<div class="relative aspect-square overflow-hidden rounded-xl bg-surface-container shadow-2xl">
+<img alt="Crea Tu Pollo Preview" class="w-full h-full object-cover" data-alt="Modern 3D render of a stylized artistic chicken character with vibrant plumage, studio lighting, soft shadows, high-end NFT aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpFb_3ttmwZpHgREhP5fKln2rck99IBxPRAGvVR34fwrMYyWGfmul28g69Qh3tfnWel6tPGTMsOzdVCCY40lyP9dYHbZLoQVL91-b_dJeliGJRSEdM7JzepHjDJE2-KV1mPV5LkTOum2P-XdsGStfld6mmCHHjW2lFBMhpOnmIGGX1yPnRNghzXY-kl6PvC3QDlCnMkpWeTS2uBBZDcP-L3g9XeXNCqSOUP_WO-4qVN65Yn-GVnqUO3CxxxDErhTZ6cwZyQ-l4_wg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white flex items-center space-x-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-bold tracking-tight">EN DESARROLLO</span>
+</div>
+</div>
+</div>
+<!-- Signup Section -->
+<div class="bg-surface-container-low p-2 rounded-full max-w-md mx-auto flex items-center shadow-sm">
+<input class="flex-1 bg-transparent border-none focus:ring-0 px-6 text-on-surface placeholder:text-secondary-fixed-dim font-medium" placeholder="Enter your email" type="email"/>
+<button class="bg-on-background text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-zinc-800 active:scale-95 whitespace-nowrap">
+                    Notify Me
+                </button>
+</div>
+<p class="mt-6 text-label-md text-secondary-fixed-dim uppercase tracking-widest text-[0.65rem]">
+                Join 2,400+ curators on the waitlist
+            </p>
+</div>
+</main>
+<!-- Content Tonal Transition (The "No-Line" Rule) -->
+<section class="h-32 bg-gradient-to-b from-surface to-surface-container-low"></section>
+<!-- Footer -->
+<footer class="w-full py-20 bg-white dark:bg-black">
+<div class="flex flex-col items-center space-y-8 w-full">
+<div class="text-[#111111] font-extrabold text-xl tracking-tighter">POLLOS</div>
+<div class="flex space-x-12">
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">Instagram</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">X</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">OpenSea</a>
+</div>
+<p class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] opacity-80">
+                © 2024 POLLOS. Curated with precision.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] bg-white/80 backdrop-blur-xl rounded-full py-4 px-8 flex justify-between items-center shadow-xl">
+<a class="flex flex-col items-center space-y-1 text-[#6B7280]" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-[#6B7280]" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-[#111111]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-[#6B7280]" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</div>
+</body></html>

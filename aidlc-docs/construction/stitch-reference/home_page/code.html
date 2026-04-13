@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#474646",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-surface-variant": "#5b403a",
+                        "tertiary-fixed": "#ffdad3",
+                        "tertiary-container": "#ff5733",
+                        "on-secondary-fixed": "#151c27",
+                        "surface-container-low": "#f3f3f4",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-container": "#2a2a2a",
+                        "outline": "#8f7069",
+                        "surface-variant": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#dce2f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "background": "#f9f9f9",
+                        "primary-fixed": "#e5e2e1",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#1c1b1b",
+                        "tertiary": "#b72301",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-container": "#580c00",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#8c1800",
+                        "on-tertiary-fixed": "#3d0600",
+                        "on-secondary-fixed-variant": "#404754",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "inverse-surface": "#2f3131",
+                        "secondary": "#585f6c",
+                        "secondary-container": "#dce2f3",
+                        "outline-variant": "#e4beb6",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "primary-container": "#929190",
+                        "primary": "#5f5e5e",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#5e6572",
+                        "surface": "#f9f9f9",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #111111;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-['Inter'] font-extrabold text-[#111111] dark:text-white tracking-tighter uppercase">POLLOS</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Inter'] font-extrabold tracking-tighter text-[#111111] dark:text-white border-b-2 border-[#FF5733] pb-1" href="#">Inicio</a>
+<a class="font-['Inter'] font-extrabold tracking-tighter text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#111111] transition-colors duration-300" href="#">Colección</a>
+<a class="font-['Inter'] font-extrabold tracking-tighter text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#111111] transition-colors duration-300" href="#">Crea tu Pollo</a>
+</div>
+<button class="bg-[#111111] text-white px-8 py-3 rounded-full font-bold scale-95 active:scale-90 transition-transform">
+                Mint
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative px-6 md:px-12 pt-20 pb-32 max-w-[1920px] mx-auto overflow-hidden">
+<div class="flex flex-col items-center text-center space-y-12">
+<div class="space-y-4">
+<h1 class="text-7xl md:text-[8rem] font-extrabold tracking-tighter leading-none text-[#111111]">POLLOS</h1>
+<p class="text-lg md:text-xl text-[#6B7280] tracking-widest uppercase font-medium">50 Unique Characters / 50 Personajes Únicos</p>
+</div>
+<div class="w-full max-w-2xl aspect-square bg-[#F3F3F4] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vibrant 3D digital art of a stylized chicken character with bright coral and blue patterns, geometric shapes, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEdqs5Q-ITFtX-Yu_oO3Q9A6VnYMcUfrmDBjgKi9GhFsKiARSM_wYNO565vQ_JpFqNDnGMFWXOLzm-po_vHiFeL4ljokGJWNZRsx60--Jzf-BvGcB7b92LK8dYTij5m-tAGmgSp3EVFVMGFRQ36U1cnHJ6JnqBaXcWekFXmNkpaBtUHKI6Ag2VTu5f-dCpQfH_GcmAw2NjTn5u1hkUad38Gwm9oQS0wo6RWYn6Qm3PtnyamUay6I8buFbrJUE-M7fkikBbiS7GtOo"/>
+</div>
+</div>
+</header>
+<!-- Countdown Section -->
+<section class="py-24 bg-[#F3F3F4]">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-sm font-bold tracking-[0.3em] uppercase mb-12 text-[#6B7280]">Launch Countdown</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<div class="text-6xl font-extrabold tracking-tighter">420</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-[#6B7280]">Days</div>
+</div>
+<div>
+<div class="text-6xl font-extrabold tracking-tighter">12</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-[#6B7280]">Hours</div>
+</div>
+<div>
+<div class="text-6xl font-extrabold tracking-tighter">54</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-[#6B7280]">Mins</div>
+</div>
+<div>
+<div class="text-6xl font-extrabold tracking-tighter">09</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-[#6B7280]">Secs</div>
+</div>
+</div>
+<p class="mt-12 text-[#6B7280] font-medium">Coming April 16, 2026</p>
+</div>
+</section>
+<!-- Preview Gallery -->
+<section class="py-32 px-6 md:px-12 max-w-[1920px] mx-auto">
+<div class="mb-20 text-center">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4">The Collection / La Colección</h2>
+<div class="w-24 h-1 bg-[#FF5733] mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract colorful digital artwork with soft rounded shapes and minimalist chicken features in pastel tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxm3-c0qe5XtWkrxb9HrFI6eInQJUIfxRHKm76DgW8PEeCmrQK1kek5HSVJc29NmnueutERx_H6d7YOZTvP3LkrNKln3NqYn5AIYAez-8j_rz8da0Q9TorreXYNtWdLk7VaaV_8h57DC4MlvzFS5TdtOMDgBNe0C4daED77fpKhM7MKaHS9iEnV-giX9_ywpdkyBu58vLgH9SajbENBDOnmmtWd7_-PIbUkGme3oYKWxzZUzMAbSu9QdspZg63EK6-bZFJc47TwRQ"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #01</span>
+<h3 class="text-lg font-bold tracking-tight">The Architect</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High contrast digital 3D sculpture of a modern bird character with glossy metallic surfaces and neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJptN6imBGknna6R13j4WEDE2IMMAeU8y_RDiLkxvP8D04PQ-iL6tYAIuQhxNH8k0KpKTZnjiubAv9xOxQSnew5NHta-XlDsQRBRsAdyJ5J_PyNQ16I7xlET-LfS59tWYw6yxAWNPBLMYMExVN4JWc5DzAz8OpKJPKLoWihv6roFu9y41EwF0NYlUDrycbswN9MECbnkUVcLmt-uzS5CLfEp1MvThomIBk9gBmzEJT157-BMUJU616Zav9YgxeN1PrkH4cLMnCoh4"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #02</span>
+<h3 class="text-lg font-bold tracking-tight">Neon Strut</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stylized voxel art chicken character with vibrant plumage and playful expression on a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WKjFXT7JbPW015V2k8y_RvOv04UCmeT16kMHV4p8jh4UXQti_3l-9VDJxX59JiNjQMNqSn60YG5PehbKaGZIkF04Z5qKvUUfvESyeJaQOGod8ZY_L_3O9hE3-66q2w5k6Lw_uE0B7bmHvWQHJNltoSFYhRJks5VdinHElPzselEdE5kDookBtnttX34WGtbrzEdDgpFUJKJ3G_RTI17p1eyQt1WaoTPajB0ZpHq0K0ABCQQhenDD7QaWI_EB64d3c104VgFUkVw"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #03</span>
+<h3 class="text-lg font-bold tracking-tight">Voxel Vox</h3>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a digital character with complex feather patterns and vibrant red crest in a contemporary art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjIinNDu6bn_oRWbFk-kKJvGY46ed0BjSub-p9bEqRx-J7PbMHibWoC-VNhT6Pa29XKckAycHeOcM-XaPihqT-k9JCVucNJodlXLc48aRn9WjBvYWxK-MwG8iQR8vyaSvJ4tN9s7Fthp_xqy9usrlz_kZxHNB9RSL70LNlGQhJ2S3br0mCwoEq2m5DJtGb425XgbgsidDwA_XEuUf4zrk0iGhG7K14tIp3D-QGeCQoWPxtL0ZzujGYD0qi6vUQKfLDK_XqzVG3-vs"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #04</span>
+<h3 class="text-lg font-bold tracking-tight">Crest King</h3>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital painting of a chicken silhouette with a swirling galaxy pattern inside, ethereal and mysterious mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBjJ3Qa3NE9ET0l-GjqV4jrQu8h0qMUgUmfI_KA6lDiniZ6YZumCMZtfYydbCIEro56RZ3EuEUljcHZN-dkFkudrw25cQ9LUoUG3G-CE4HQLEKRF8O32-FJ5AsksN7D7xdwbhkVvWrr3PjdozoDMPZRQnqgDtjGkJbGuemdsoB72Y_cKCujlmi8uvO0Ff8laifL1mxyJ2pk9qoX36mG-uG_rcvd2rDWM_AIKf7TOp1dWu9sL5XB9w4SN-PhL8aryufVa6L8iribDI"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #05</span>
+<h3 class="text-lg font-bold tracking-tight">Cosmic Cluck</h3>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl bg-[#F3F3F4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Flat vector style illustration of a modern chicken with sharp geometric lines and bright coral accent colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDLpxV1oo_XFqLWMO29vOGKWrMjFPn1FYRmuKVFsrioh1KKztJ12CmMzZkR3HaaIesYlbfg5gTc8agUOqiXs2guAExMLD8EM1L5srOotzZxK-dylZXWyMOU0xPKktvMFg22U25S6Ng04xD37GXzGP4mNz_8yoqwpMb7vug3yXlbzHUl0iUtpkMzgF-_4uV5DLF6L55JEd2uPslywFtZMIZdNLlBsRLTHpW9JgS4xccXWtyy4-C3qGoBBjlPhGmScV7WhqdMWiEM4A"/>
+</div>
+<div class="px-2">
+<span class="text-xs font-bold text-[#6B7280]">POLLO #06</span>
+<h3 class="text-lg font-bold tracking-tight">Vector Prime</h3>
+</div>
+</div>
+</div>
+<div class="text-center">
+<a class="inline-block border-b-2 border-[#111111] pb-2 font-extrabold uppercase tracking-widest text-sm hover:text-[#FF5733] hover:border-[#FF5733] transition-colors" href="#">
+                View Full Collection
+            </a>
+</div>
+</section>
+<!-- Manifesto Section -->
+<section class="py-32 bg-white px-6 md:px-12">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="space-y-8 pr-0 md:pr-20">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight">The Story / La Historia</h2>
+<div class="space-y-6 text-lg text-[#6B7280] leading-relaxed">
+<p>Pollos represents a convergence of traditional avian symbolism and modern digital expressionism. Each character is meticulously crafted to evoke a specific emotional resonance, blending vibrant palettes with sharp, calculated geometry.</p>
+<p>En el corazón de esta colección yace la idea de que lo cotidiano puede elevarse a lo extraordinario. No son solo imágenes; son fragmentos de una narrativa visual que desafía la percepción de lo que un NFT puede representar en el espacio del arte contemporáneo.</p>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-xl overflow-hidden aspect-[4/5] bg-[#F3F3F4]">
+<img class="w-full h-full object-cover" data-alt="Sophisticated oil painting style digital portrait of a character with rich textures and deep shadows, museum quality lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAad14UZWHA521SLOk7M4uzBbesOXiqftOlC3kuiRs6b2tjcvsoqdPzFZJ6oZ-OHfLYPwNsy1REHFpFICgg7FjNcNHk1CG5WBJvalhRIztflqdaMQY7BP_xAlymi7V7rEhgfQxBIDig90UeXjXQXbPB01Y8LF7AnTCBBaCnLzNJwU7BcxWVu82i31ShllRjsC2vYWH1s0mtWY1F8FEoREVqomJS1Y1HzokfSnuezv7nbnE7m3Bn8a3BwGGNNF5mUglIP3E_AodrCU4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Artist -->
+<section class="py-32 bg-[#F3F3F4]">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="mb-12 inline-block">
+<div class="w-48 h-48 rounded-full overflow-hidden border-8 border-white mx-auto shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of a modern digital artist in a minimalist studio environment, soft natural lighting, creative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHjK4dozepEWvHg2GyPgkFwyABUjyOJrh0W-SS6YrEm4k8OtvytVKy9YhZ7e_3SvPd7K1Uhu61Il9FPjl79aXXryw25Ry5e8CbC81DRIXv29kCC_YyzEWMai0xtfnzUZZP4OuWmClzSKeJlA9OagjNZmdtklWo1LDy9gewboZaziN4dZYQL4u0d85srWGQA7F7naxJGCIYhxGVUzP0r4ZnP896Y9V37Gff9T4fgKhbfUekiMAewqNgnG8Oilt0sUzqnv5Ui3fXoVs"/>
+</div>
+</div>
+<h2 class="text-3xl font-extrabold mb-2 tracking-tighter">Arturo V.</h2>
+<p class="text-[#FF5733] font-bold uppercase tracking-widest text-xs mb-8">Digital Curator &amp; Artist</p>
+<div class="text-[#6B7280] space-y-4 max-w-2xl mx-auto leading-relaxed">
+<p>Based in Madrid, Arturo has spent a decade exploring the intersection of biological forms and algorithmic art. Pollos is his first genesis collection on the Ethereum blockchain.</p>
+<p>Residente en Madrid, Arturo ha dedicado una década a explorar la intersección entre las formas biológicas y el arte algorítmico. Pollos es su primera colección génesis en Ethereum.</p>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-32 px-6 md:px-12 max-w-3xl mx-auto">
+<h2 class="text-4xl font-extrabold tracking-tighter mb-16 text-center">Common Questions</h2>
+<div class="space-y-8">
+<div class="pb-8 border-b border-[#E8E8E8]">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="text-xl font-bold tracking-tight">What is an NFT?</span>
+<span class="material-symbols-outlined text-[#6B7280] group-hover:text-[#111111]">add</span>
+</button>
+<p class="mt-4 text-[#6B7280] hidden">A non-fungible token is a unique digital identifier that cannot be copied, substituted, or subdivided, that is recorded in a blockchain, and that is used to certify authenticity and ownership.</p>
+</div>
+<div class="pb-8 border-b border-[#E8E8E8]">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="text-xl font-bold tracking-tight">How do I buy?</span>
+<span class="material-symbols-outlined text-[#6B7280] group-hover:text-[#111111]">add</span>
+</button>
+</div>
+<div class="pb-8 border-b border-[#E8E8E8]">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="text-xl font-bold tracking-tight">How many pieces?</span>
+<span class="material-symbols-outlined text-[#6B7280] group-hover:text-[#111111]">add</span>
+</button>
+</div>
+<div class="pb-8 border-b border-[#E8E8E8]">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="text-xl font-bold tracking-tight">What's the price?</span>
+<span class="material-symbols-outlined text-[#6B7280] group-hover:text-[#111111]">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Mint CTA Section -->
+<section class="py-40 px-6 md:px-12 text-center bg-[#111111] text-white">
+<div class="max-w-4xl mx-auto space-y-10">
+<h2 class="text-6xl md:text-8xl font-extrabold tracking-tighter">Get Your Pollo</h2>
+<div class="flex flex-col items-center space-y-6">
+<p class="text-2xl font-medium tracking-wide">[PRICE TBD] ETH</p>
+<button class="bg-[#FF5733] hover:bg-[#e64e2e] text-white px-16 py-6 rounded-full text-xl font-extrabold transition-all duration-300 scale-100 hover:scale-105 active:scale-95 shadow-xl shadow-[#FF5733]/20">
+                    Mint on Manifold
+                </button>
+<p class="text-[#6B7280] uppercase tracking-[0.3em] text-xs font-bold pt-4">Launching April 16, 2026</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-20 bg-white dark:bg-black">
+<div class="flex flex-col items-center space-y-8 w-full">
+<div class="text-[#111111] font-extrabold tracking-widest text-2xl">POLLOS</div>
+<div class="flex space-x-12">
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">Instagram</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">X</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] hover:text-[#FF5733] transition-colors" href="#">OpenSea</a>
+</div>
+<p class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#6B7280] opacity-80">© 2024 POLLOS. Curated with precision.</p>
+</div>
+</footer>
+</body></html>
