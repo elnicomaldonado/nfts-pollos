@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import { LAUNCH } from "@/lib/config";
 
 interface TimeLeft {
@@ -73,24 +74,42 @@ export default function CountdownTimer() {
   return (
     <section className="py-20 bg-surface" data-testid="countdown-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-sm font-bold tracking-[0.3em] uppercase mb-10 text-muted">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-sm font-bold tracking-[0.3em] uppercase mb-10 text-muted"
+        >
           Launch Countdown
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {blocks.map((block) => (
-            <div key={block.label}>
+          {blocks.map((block, i) => (
+            <motion.div
+              key={block.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+            >
               <div className="text-5xl md:text-6xl font-extrabold tracking-tighter">
                 {block.value}
               </div>
               <div className="text-xs uppercase tracking-widest mt-2 text-muted">
                 {block.label}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <p className="mt-10 text-muted font-medium">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-10 text-muted font-medium"
+        >
           Coming {LAUNCH.display}
-        </p>
+        </motion.p>
       </div>
     </section>
   );
