@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     template: "%s | POLLOS",
   },
   description:
-    "A collection of 50 unique hand-illustrated NFT characters on Ethereum. Launching April 16, 2026.",
+    "A collection of 50 unique hand-illustrated NFT characters on Ethereum. Launching April 14, 2026.",
   openGraph: {
     title: "POLLOS — 50 Unique Characters on Ethereum",
     description:
-      "50 hand-illustrated 1/1 NFT characters. Each one unique. Launching April 16, 2026.",
+      "50 hand-illustrated 1/1 NFT characters. Each one unique. Launching April 14, 2026.",
     images: [{ url: "/images/placeholder-og.svg", width: 1200, height: 630 }],
     type: "website",
   },

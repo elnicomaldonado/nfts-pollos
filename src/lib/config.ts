@@ -37,10 +37,10 @@ export const SOCIAL = {
 } as const;
 
 export const LAUNCH = {
-  /** Launch date — April 16, 2026, midnight UTC */
-  date: new Date("2026-04-16T00:00:00Z"),
+  /** Launch date — 14 April 2026, midnight UTC */
+  date: new Date("2026-04-14T00:00:00Z"),
   /** Formatted display string */
-  display: "16 de abril de 2026",
+  display: "14 de abril de 2026",
 } as const;
 
 export const NAV_LINKS = [
