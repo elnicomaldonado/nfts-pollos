@@ -15,21 +15,20 @@ export default function ManifestoSection() {
           className="space-y-6 md:pr-8"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight">
-            The Story / La Historia
+            La historia
           </h2>
           <div className="space-y-5 text-lg text-muted leading-relaxed">
             {/* [PLACEHOLDER] — replace with real manifesto copy */}
             <p>
-              Pollos represents a convergence of traditional illustration and
-              modern digital expressionism. Each character is meticulously
-              crafted to evoke a specific emotional resonance, blending vibrant
-              palettes with sharp, calculated personality.
+              Kikirikrew es el cruce entre ilustración tradicional y expresión
+              digital contemporánea. Cada personaje se construye con intención:
+              color, gesto y carácter para generar una resonancia emocional clara.
             </p>
             <p>
-              En el corazón de esta colección yace la idea de que lo cotidiano
-              puede elevarse a lo extraordinario. No son solo imágenes; son
-              fragmentos de una narrativa visual que desafía la percepción de lo
-              que el arte digital puede representar.
+              En el corazón de esta colección está la idea de que lo cotidiano
+              puede volverse extraordinario. No son solo imágenes: son fragmentos
+              de una narrativa visual que invita a mirar el arte digital con
+              otra mirada.
             </p>
           </div>
         </motion.div>
@@ -44,7 +43,7 @@ export default function ManifestoSection() {
           {/* [PLACEHOLDER] — replace with manifesto artwork */}
           <Image
             src="/images/placeholder-hero.svg"
-            alt="Artwork from the POLLOS collection"
+            alt="Obra de la colección Kikirikrew"
             width={600}
             height={750}
             className="w-full h-full object-cover"

@@ -44,20 +44,20 @@ export default function Header() {
           <div className="flex items-center gap-4">
             {/* Mint CTA */}
             <Link
-              href={COLLECTION.manifoldUrl}
+              href={COLLECTION.openseaUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-foreground text-white px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-opacity duration-200"
               data-testid="header-mint-button"
             >
-              Mint
+              Comprar
             </Link>
 
             {/* Mobile hamburger */}
             <button
               className="md:hidden flex flex-col gap-1.5 p-2"
               onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
+              aria-label="Abrir menú"
               data-testid="header-menu-toggle"
             >
               <span className="block w-6 h-0.5 bg-foreground" />

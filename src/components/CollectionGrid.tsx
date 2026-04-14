@@ -11,7 +11,15 @@ const rarityColor: Record<Rarity, string> = {
   Rare:      "text-blue-400",
   Epic:      "text-purple-400",
   Legendary: "text-yellow-400",
-};
+}
+
+const rarityLabel: Record<Rarity, string> = {
+  Common: "Común",
+  Uncommon: "Poco común",
+  Rare: "Raro",
+  Epic: "Épico",
+  Legendary: "Legendario",
+}
 
 const cardVariants = {
   hidden: { opacity: 0, y: 24 },
@@ -50,7 +58,7 @@ export default function CollectionGrid() {
                 {String(nft.id).padStart(2, "0")}/{COLLECTION.totalPieces}
               </span>
               <span className={`text-xs font-bold uppercase tracking-wider ${rarityColor[nft.rarity]}`}>
-                {nft.rarity}
+                {rarityLabel[nft.rarity]}
               </span>
             </div>
             <h3 className="text-base font-extrabold tracking-tight">

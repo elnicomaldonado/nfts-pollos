@@ -6,24 +6,24 @@ import AnimateIn from "./AnimateIn";
 
 const FAQ_ITEMS = [
   {
-    question: "What is an NFT? / ¿Qué es un NFT?",
+    question: "¿Qué es un NFT?",
     answer:
-      "A non-fungible token (NFT) is a unique digital identifier recorded on a blockchain that certifies authenticity and ownership of a digital asset. / Un token no fungible es un identificador digital único registrado en blockchain que certifica la autenticidad y propiedad de un activo digital.",
+      "Un token no fungible (NFT) es un identificador digital único registrado en blockchain que certifica la autenticidad y la propiedad de un activo digital.",
   },
   {
-    question: "How do I buy? / ¿Cómo compro?",
+    question: "¿Cómo compro?",
     answer:
-      "You'll need an Ethereum wallet (like MetaMask) with ETH. Click the 'Mint' button to go to our Manifold claim page and follow the instructions. / Necesitas una wallet de Ethereum (como MetaMask) con ETH. Haz clic en 'Mint' para ir a la página de Manifold y sigue las instrucciones.",
+      "Necesitas una wallet de Ethereum (por ejemplo MetaMask) con ETH. Pulsa «Mint» o «Comprar en OpenSea» para ir a la colección en OpenSea y sigue los pasos allí.",
   },
   {
-    question: "How many pieces? / ¿Cuántas piezas hay?",
+    question: "¿Cuántas piezas hay?",
     answer:
-      "The POLLOS collection consists of 50 unique, hand-illustrated 1/1 pieces. Each one is a completely unique character. / La colección POLLOS consta de 50 piezas únicas ilustradas a mano. Cada una es un personaje completamente único.",
+      "La colección Kikirikrew tiene 50 piezas únicas ilustradas a mano (1/1). Cada una es un personaje distinto.",
   },
   {
-    question: "What's the price? / ¿Cuál es el precio?",
+    question: "¿Cuál es el precio?",
     answer:
-      "The price per piece will be announced closer to launch date. Follow us on social media for updates. / El precio por pieza se anunciará más cerca de la fecha de lanzamiento. Síguenos en redes sociales para actualizaciones.",
+      "El precio por pieza está indicado en la sección de compra y en OpenSea. Revisa también nuestras redes para novedades.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function FAQSection() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <AnimateIn>
         <h2 className="text-4xl font-extrabold tracking-tighter mb-14 text-center">
-          Common Questions
+          Preguntas frecuentes
         </h2>
       </AnimateIn>
 

@@ -99,3 +99,19 @@
 **Context**: Build and Test stage complete. All CONSTRUCTION phases done.
 
 ---
+
+## Operations — Push to GitHub for Vercel
+**Timestamp**: 2026-04-14T04:00:42Z
+**User Input**: "necesito hacer el push para qu epueda lanzarce a vercel"
+**AI Response**: Verified git repo and remote origin. Reviewed diff for secrets (.env not present). Created commit "feat: update collection data and images" including config updates, metadata/UI tweaks, and 50 PNG NFT images. Pushed `main` to `origin` (GitHub) to trigger Vercel deploy.
+**Context**: Operations (deployment enablement) — git push completed.
+
+---
+
+## Operations — Push for Vercel (Spanish UI + hero + nav)
+**Timestamp**: 2026-04-14T04:14:24Z
+**User Input**: "haz el puz para que se deployee actumaticamente en vercerl"
+**AI Response**: Staged all pending changes (Spanish visible copy, hero image01_og.png, OpenSea nav/CTAs, KIKIRIKREW naming in nfts/config, requirements question file). Committed and pushed `main` to `origin` to trigger automatic Vercel deploy.
+**Context**: Operations — git push for production deploy.
+
+---

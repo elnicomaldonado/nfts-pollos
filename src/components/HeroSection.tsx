@@ -23,7 +23,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
             className="text-lg md:text-xl text-muted tracking-widest uppercase font-medium"
           >
-            50 Unique Characters / 50 Personajes Únicos
+            50 personajes únicos
           </motion.p>
         </div>
 
@@ -33,10 +33,9 @@ export default function HeroSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
           className="w-full max-w-2xl aspect-square bg-surface rounded-xl overflow-hidden"
         >
-          {/* [PLACEHOLDER] — replace with hero artwork */}
           <Image
-            src="/images/placeholder-hero.svg"
-            alt="POLLOS Collection hero artwork"
+            src="/images/nfts/01_og.png"
+            alt="Arte principal de la colección Kikirikrew"
             width={800}
             height={800}
             className="w-full h-full object-cover"

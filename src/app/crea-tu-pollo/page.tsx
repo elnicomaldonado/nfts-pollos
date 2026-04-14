@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Crea Tu Pollo — POLLOS",
+  title: "Crea tu pollo — Kikirikrew",
   description:
-    "Coming soon: mix and match traits to create your own unique POLLOS character.",
+    "Próximamente: combina rasgos y crea tu propio personaje del universo Kikirikrew.",
 };
 
 export default function CreaTuPolloPage() {
@@ -12,7 +12,7 @@ export default function CreaTuPolloPage() {
     <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-24 text-center">
       {/* Label */}
       <span className="text-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-        Coming Soon / Próximamente
+        Próximamente
       </span>
 
       {/* Heading */}
@@ -22,8 +22,8 @@ export default function CreaTuPolloPage() {
 
       {/* Description */}
       <p className="text-muted text-lg md:text-xl max-w-xl mx-auto leading-relaxed mb-12">
-        Soon you&apos;ll be able to mix and match chicken traits to create your own
-        unique character. A digital laboratory for the POLLOS ecosystem.
+        Pronto podrás combinar rasgos de pollo para crear tu propio personaje.
+        Un laboratorio digital para el universo Kikirikrew.
       </p>
 
       {/* Preview image */}
@@ -32,7 +32,7 @@ export default function CreaTuPolloPage() {
           {/* [PLACEHOLDER] — replace with preview artwork */}
           <Image
             src="/images/placeholder-hero.svg"
-            alt="Crea Tu Pollo preview"
+            alt="Vista previa de Crea tu pollo"
             width={500}
             height={500}
             className="w-full h-full object-cover"
@@ -61,7 +61,7 @@ export default function CreaTuPolloPage() {
         className="inline-block bg-foreground text-white px-10 py-4 rounded-full font-bold text-base hover:opacity-90 transition-opacity duration-200"
         data-testid="crea-tu-pollo-notify"
       >
-        Notify Me / Notifícame
+        Avísame
       </a>
     </div>
   );

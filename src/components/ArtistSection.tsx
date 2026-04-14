@@ -43,12 +43,8 @@ export default function ArtistSection() {
           <div className="text-muted space-y-4 max-w-2xl mx-auto leading-relaxed">
             {/* [PLACEHOLDER] — replace with real artist bio */}
             <p>
-              Artist bio in English goes here. Replace this placeholder with the
-              real biography before launch.
-            </p>
-            <p>
-              Bio de la artista en español va aquí. Reemplazar este placeholder
-              con la biografía real antes del lanzamiento.
+              Biografía del artista: reemplaza este texto con la historia real
+              de Puttuno antes del lanzamiento.
             </p>
           </div>
         </motion.div>

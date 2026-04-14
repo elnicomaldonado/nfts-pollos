@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs uppercase tracking-widest text-muted opacity-80">
-          &copy; {SITE.year} {SITE.brandName}. All rights reserved.
+          &copy; {SITE.year} {SITE.brandName}. Todos los derechos reservados.
         </p>
       </div>
     </footer>

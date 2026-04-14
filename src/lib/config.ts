@@ -4,13 +4,13 @@
 
 export const SITE = {
   /** Brand / artist name shown in header, hero, footer */
-  brandName: "KIKIRICREW",
+  brandName: "KIKIRIKREW",
   /** Collection name */
-  collectionName: "Kikiricrew",
+  collectionName: "Kikirikrew",
   /** Artist display name */
   artistName: "Puttuno",
   /** Artist role / title */
-  artistRole: "Digital Artist",
+  artistRole: "Artista digital",
   /** Copyright year */
   year: 2026,
 } as const;
@@ -40,7 +40,7 @@ export const LAUNCH = {
   /** Launch date — April 16, 2026, midnight UTC */
   date: new Date("2026-04-16T00:00:00Z"),
   /** Formatted display string */
-  display: "April 16, 2026",
+  display: "16 de abril de 2026",
 } as const;
 
 export const NAV_LINKS = [

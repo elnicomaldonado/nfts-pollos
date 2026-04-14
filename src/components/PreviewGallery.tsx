@@ -20,7 +20,7 @@ export default function PreviewGallery() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <AnimateIn className="mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4">
-          The Collection / La Colección
+          La colección
         </h2>
         <div className="w-20 h-1 bg-accent mx-auto" />
       </AnimateIn>
@@ -63,7 +63,7 @@ export default function PreviewGallery() {
           className="inline-block border-b-2 border-foreground pb-1 font-extrabold uppercase tracking-widest text-sm hover:text-accent hover:border-accent transition-colors duration-200"
           data-testid="preview-gallery-view-all"
         >
-          View Full Collection
+          Ver colección completa
         </Link>
       </AnimateIn>
     </section>

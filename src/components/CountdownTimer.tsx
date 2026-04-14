@@ -42,10 +42,10 @@ export default function CountdownTimer() {
       <section className="py-20 bg-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-sm font-bold tracking-[0.3em] uppercase mb-10 text-muted">
-            Launch Countdown
+            Cuenta regresiva
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["Days", "Hours", "Mins", "Secs"].map((label) => (
+            {["Días", "Horas", "Min", "Seg"].map((label) => (
               <div key={label}>
                 <div className="text-5xl md:text-6xl font-extrabold tracking-tighter">
                   --
@@ -57,7 +57,7 @@ export default function CountdownTimer() {
             ))}
           </div>
           <p className="mt-10 text-muted font-medium">
-            Coming {LAUNCH.display}
+            Lanzamiento el {LAUNCH.display}
           </p>
         </div>
       </section>
@@ -65,10 +65,10 @@ export default function CountdownTimer() {
   }
 
   const blocks: { value: string; label: string }[] = [
-    { value: String(time.days), label: "Days" },
-    { value: pad(time.hours), label: "Hours" },
-    { value: pad(time.minutes), label: "Mins" },
-    { value: pad(time.seconds), label: "Secs" },
+    { value: String(time.days), label: "Días" },
+    { value: pad(time.hours), label: "Horas" },
+    { value: pad(time.minutes), label: "Min" },
+    { value: pad(time.seconds), label: "Seg" },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function CountdownTimer() {
           transition={{ duration: 0.5 }}
           className="text-sm font-bold tracking-[0.3em] uppercase mb-10 text-muted"
         >
-          Launch Countdown
+          Cuenta regresiva
         </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {blocks.map((block, i) => (
@@ -108,7 +108,7 @@ export default function CountdownTimer() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-10 text-muted font-medium"
         >
-          Coming {LAUNCH.display}
+          Lanzamiento el {LAUNCH.display}
         </motion.p>
       </div>
     </section>

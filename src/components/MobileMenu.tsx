@@ -21,7 +21,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         <button
           onClick={onClose}
           className="p-2 text-foreground"
-          aria-label="Close menu"
+          aria-label="Cerrar menú"
           data-testid="mobile-menu-close"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -47,14 +47,14 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         ))}
 
         <Link
-          href={COLLECTION.manifoldUrl}
+          href={COLLECTION.openseaUrl}
           target="_blank"
           rel="noopener noreferrer"
           onClick={onClose}
           className="mt-4 bg-foreground text-white px-10 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity duration-200"
           data-testid="mobile-menu-mint-button"
         >
-          Mint
+          Comprar
         </Link>
       </div>
     </div>
