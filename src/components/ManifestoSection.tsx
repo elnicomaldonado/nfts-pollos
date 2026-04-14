@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { nfts } from "@/lib/nfts";
+
+const piece50 = nfts.find((nft) => nft.id === 50)!;
 
 export default function ManifestoSection() {
   return (
@@ -40,10 +43,9 @@ export default function ManifestoSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           className="aspect-[4/5] bg-surface rounded-xl overflow-hidden"
         >
-          {/* [PLACEHOLDER] — replace with manifesto artwork */}
           <Image
-            src="/images/placeholder-hero.svg"
-            alt="Obra de la colección Kikirikrew"
+            src={piece50.image}
+            alt={`${piece50.name} — ${piece50.subtitle}`}
             width={600}
             height={750}
             className="w-full h-full object-cover"

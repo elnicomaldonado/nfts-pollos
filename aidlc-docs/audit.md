@@ -115,3 +115,11 @@
 **Context**: Operations — git push for production deploy.
 
 ---
+
+## Operations — Push for Vercel (Crea tu pollo + manifesto #50)
+**Timestamp**: 2026-04-14T04:24:50Z
+**User Input**: "ok haz el push para que se deploy en vercel"
+**AI Response**: Committed interactive Crea tu pollo (pollo-generator, pollo-export, CreaTuPolloExperience), manifesto image from NFT #50, page wiring. Pushed `main` to `origin` for Vercel deploy.
+**Context**: Operations — git push.
+
+---
