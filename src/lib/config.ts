@@ -4,13 +4,13 @@
 
 export const SITE = {
   /** Brand / artist name shown in header, hero, footer */
-  brandName: "POLLOS", // [PLACEHOLDER] — update if brand name changes
+  brandName: "KIKIRICREW",
   /** Collection name */
-  collectionName: "[NOMBRE DE COLECCIÓN]", // [PLACEHOLDER]
+  collectionName: "Kikiricrew",
   /** Artist display name */
-  artistName: "[NOMBRE ARTISTA]", // [PLACEHOLDER]
+  artistName: "Puttuno",
   /** Artist role / title */
-  artistRole: "Digital Artist", // [PLACEHOLDER]
+  artistRole: "Digital Artist",
   /** Copyright year */
   year: 2026,
 } as const;
@@ -21,13 +21,13 @@ export const COLLECTION = {
   /** Blockchain */
   blockchain: "Ethereum",
   /** Price per piece */
-  price: "[PRICE TBD]", // [PLACEHOLDER]
+  price: "0.005",
   /** Token standard */
   standard: "ERC-721",
   /** Manifold claim page URL */
   manifoldUrl: "#", // [PLACEHOLDER] — replace with actual Manifold URL
   /** OpenSea collection URL */
-  openseaUrl: "#", // [PLACEHOLDER] — replace with actual OpenSea URL
+  openseaUrl: "https://opensea.io/collection/kikirikrew",
 } as const;
 
 export const SOCIAL = {
