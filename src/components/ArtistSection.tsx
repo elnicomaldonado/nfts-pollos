@@ -15,14 +15,14 @@ export default function ArtistSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-8"
         >
-          <div className="w-40 h-40 rounded-full overflow-hidden border-6 border-white mx-auto shadow-sm">
-            {/* [PLACEHOLDER] — replace with artist photo */}
+          <div className="w-44 h-44 sm:w-48 sm:h-48 rounded-full overflow-hidden border-4 border-white mx-auto shadow-lg ring-2 ring-black/5">
             <Image
-              src="/images/placeholder-artist.svg"
-              alt={SITE.artistName}
-              width={200}
-              height={200}
-              className="w-full h-full object-cover"
+              src="/images/puttuno-artist.png"
+              alt={`${SITE.artistName} — ${SITE.artistRole}`}
+              width={400}
+              height={400}
+              className="w-full h-full object-cover object-[center_25%]"
+              sizes="(max-width: 640px) 176px, 192px"
             />
           </div>
         </motion.div>
